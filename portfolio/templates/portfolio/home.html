@@ -1,0 +1,28 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title %}Rajat - Portfolio{% endblock title %}
+
+{% block scripts %}
+    <script src="{% static 'portfolio/my-script.js' %}" defer></script> 
+{% endblock scripts %}
+
+{% block content %}
+<section class="hero py-24 text-center bg-gray-800 text-white min-h-[400px]">  
+    <div class="container mx-auto">
+        <img src="{% static 'images/profile.png' %}" 
+                alt="Rajat - Web Developer" 
+                class="w-40 h-40 rounded-full mx-auto mb-6"> 
+        <h1 style="transition-delay: 100ms;" class="hero__StyledOverline-sc-180ss6q-1 iWAmFy fadeup-enter-done">Hello World! My name is</h1>
+        <h2 id="typed-name" style="transition-delay: 200ms;" class="hero__StyledTitle-sc-180ss6q-2 eKyqrA fadeup-enter-done"></h2>
+        <p class="text-lg poppins-medium mb-6">Web Developer | Python Enthusiast</p>
+        <div class="social-links flex justify-center items-center space-x-4 mb-8 margin-top: 25px">
+            <a href="https://www.linkedin.com/in/rajat-g-41490018b/" target="_blank" rel="noopener noreferrer">
+               <img src="{% static 'icons/linkedin.svg' %}" class="h-6 w-6" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/morgoth9808" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'icons/github.svg' %}" class="h-6 w-6" alt="Github">
+            </div>
+        <a href="https://drive.google.com/file/d/1NCRaZAqoRtHweWkehvZuST00q_EkczFk/view?usp=drive_link" class="bg-gray-700 hover:bg-gray-600 etlafI text-white font-medium py-3 px-6 rounded inline-block transition-colors duration-300">Download CV</a>
+    </div>
+</section>
+{% endblock content %}

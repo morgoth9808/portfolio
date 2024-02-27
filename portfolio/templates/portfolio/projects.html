@@ -1,0 +1,57 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}My Projects {% endblock title %}
+
+{% block content %}
+
+<section class="projects py-20 container mx-auto" id="projects">
+    <h2 class="text-4xl font-extrabold mb-5 py-5  md:text-start text-white">Featured Projects</h2>
+    <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row mb-10 gap-4 md:gap-x-8 bg-gray-900 p-5 rounded-lg md:px-10 xl:px-20'>
+        <img class="post-img-url rounded-lg object-cover mx-5 my-5" width='350px' height='180px' src="https://tatsatchronicle.com/wp-content/uploads/2021/10/acastro_190920_1777_amazon_0002.0.0.jpg" alt="image">
+        <div>
+          <p class=" poppins-medium mx-10 mt-5 font-bold text-xl mr-20 text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Amazon reviews scraper</p>
+          <p class='rubik-4 text-justify my-3 mx-10 mr-20'>Developed a Node.js web scraper leveraging the Puppeteer library to extract customer reviews from Amazon
+            product pages.Implemented systematic navigation across multiple review pages, collected essential data (author, date, text), and
+            exported results into a structured CSV format</p>
+          <ul class='mx-10 mb-3 text-xl'>
+            <li>&#9989; Puppeteer browser automation</li>
+            <li>&#9989; Scalable multi-page scraping</li>
+            <li>&#9989; Structured data export (CSV)</li>
+          </ul>
+          <span class='mx-10 text-lg font-bold'>Technologies used</span><br>
+          <div class='flex mx-10 space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Node.js</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-coffee"></i> Puppeteer</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Js</span>
+          </div>
+          <div class='flex space-x-4 mx-10 my-3'>
+            <a href='/'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+            <a href='#' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+          </div>
+        </div>
+    </div>
+    <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-10 rounded-lg md:px-10 xl:px-20'>
+        <img class="post-img-url rounded-lg object-cover mx-5 my-5" width='350px' height='180px' src="https://i.imgur.com/wRetnxk.png" alt="image">
+        <div>
+          <p class=" poppins-medium mx-10 mt-5 font-bold text-xl mr-20 text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Invoice Generator</p>
+          <p class='rubik-4 text-justify my-3 mx-10 mr-20'>An Invoice creator project built with React. Add itemized items, configure quantity, prices, tax rates and discounts. Download Invoice as PDFs to your device.</p>
+          <ul class='mx-10 mb-3 text-xl'>
+            <li>&#9989; User Friendly</li>
+            <li>&#9989; Responsive Design</li>
+          </ul>
+          <span class='mx-10 text-lg font-bold'>Technologies used</span><br>
+          <div class='flex mx-10 space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> React</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-css3-alt"></i> Tailwind</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Js</span>
+          </div>
+          <div class='flex space-x-4 mx-10 my-3'>
+            <a href='/'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+            <a href='#' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+          </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
